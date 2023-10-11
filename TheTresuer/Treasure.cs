@@ -21,4 +21,16 @@ namespace TheTreasure
         public int TeamId { get; set; }
         public virtual Team Team { get; set; }
     }
+
+    public class AddTeamPointsDto
+    {
+	    public int TeamId { get; set; }
+	    public List<Point> Points { get; set; }
+    }
+
+    public class Point
+    {
+	    public string Latitude { get; set; }
+	    public string Longitude { get; set; }
+    }
 }
